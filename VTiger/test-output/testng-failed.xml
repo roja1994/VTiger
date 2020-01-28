@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test3(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.vtiger.scripts.TestContactModule">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="createContactWithPhno"/>
+          <include name="testLogin"/>
+          <include name="createContact"/>
+          <include name="createContactWithFname"/>
+        </methods>
+      </class> <!-- com.vtiger.scripts.TestContactModule -->
+      <class name="com.vtiger.scripts.TestCreateOrganization">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- com.vtiger.scripts.TestCreateOrganization -->
+      <class name="com.vtiger.scripts.TestCampignModule">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- com.vtiger.scripts.TestCampignModule -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.vtiger.scripts.TestContactModule">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- com.vtiger.scripts.TestContactModule -->
+      <class name="com.vtiger.scripts.TestCreateOrganization">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- com.vtiger.scripts.TestCreateOrganization -->
+      <class name="com.vtiger.scripts.TestCampignModule">
+        <methods>
+          <include name="testCreateCampaigns"/>
+          <include name="testCreateProduct"/>
+          <include name="openBrowser"/>
+          <include name="testCreateCampaignsWithExpectedRevenue"/>
+          <include name="testLogin"/>
+          <include name="testCreateCampaignsWithActualCost"/>
+        </methods>
+      </class> <!-- com.vtiger.scripts.TestCampignModule -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.vtiger.scripts.TestContactModule">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- com.vtiger.scripts.TestContactModule -->
+      <class name="com.vtiger.scripts.TestCreateOrganization">
+        <methods>
+          <include name="testCreateOrganizationPre"/>
+          <include name="openBrowser"/>
+          <include name="testCreateOrganizationWithPhoneNo"/>
+          <include name="testLogin"/>
+          <include name="testCreateOrganization"/>
+        </methods>
+      </class> <!-- com.vtiger.scripts.TestCreateOrganization -->
+      <class name="com.vtiger.scripts.TestCampignModule">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- com.vtiger.scripts.TestCampignModule -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
